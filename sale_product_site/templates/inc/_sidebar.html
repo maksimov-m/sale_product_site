@@ -1,0 +1,7 @@
+{% load product_list_tags %}
+<div class="list-group">
+    {% get_categories  as categories%}
+    {% for item in categories %}
+    <a href="#" class="list-group-item list-group-item-action">{{ item }}</a>
+    {% endfor %}
+</div>
