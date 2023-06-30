@@ -37,10 +37,10 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
             {% if content %}
             {% for item in content %}
-            <img src="{{ item.image_Url }}" width="200" height="200"class="card-img-top mt-3" alt="...">
+            <img src="{{ item.image_Url }}" width="200" height="200" class="card-img-top mt-3" alt="...">
             <div class="card mt-1" style="width: 35rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{ item.name }}</h5>
@@ -49,6 +49,7 @@
                         <strong>Цена</strong>: {{ item.sale_Price }} р.<br>
                         <strong>Тип</strong>: {{ item.type }}
                     </p>
+                    <p><a href="{{ item.url }}">Ссылка на продукт</a></p>
                 </div>
             </div>
                 {% endfor %}
